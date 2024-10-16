@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="internsala.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            SKILL<span>GROOM</span>
+        </div>
+
+    <div class="custom-select-wrapper">
+        <div class="custom-select">
+            <p>Certification courses <span class="offer">offer</span></p>
+            <div class="custom-options">
+                <span class="custom-option" data-value="1">Full stack Development</span>
+                <span class="custom-option" data-value="2">Data Science</span>
+                <span class="custom-option" data-value="3">Backend Development</span>
+                <span class="custom-option" data-value="4">Digital marketing </span>
+                <span class="custom-option" data-value="5">UI/UX Designing</span>
+                <span class="custom-option" data-value="6">Sales & Management</span>
+                <span class="custom-option" data-value="7">Figma Development</span>
+                <span class="custom-option" data-value="8">Data Analytics</span>
+                <span class="custom-option" data-value="9">Anroid Development</span>
+                <span class="custom-option" data-value="10">Creative Certification</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="custom-select-wrapper">
+        <div class="custom-select">
+            <p>Placement Gurantee course </p>
+            <div class="custom-options">
+                <span class="custom-option" data-value="1">Full stack Development</span>
+                <span class="custom-option" data-value="2">Data Science</span>
+                <span class="custom-option" data-value="3">Backend Development</span>
+                <span class="custom-option" data-value="4">Digital marketing </span>
+                <span class="custom-option" data-value="5">UI/UX Designing</span>
+                <span class="custom-option" data-value="6">Sales & Management</span>
+                <span class="custom-option" data-value="7">Figma Development</span>
+                <span class="custom-option" data-value="8">Data Analytics</span>
+                <span class="custom-option" data-value="9">Anroid Development</span>
+                <span class="custom-option" data-value="10">Creative Certification</span>
+            </div>
+        </div>
+    </div>    
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="login-btn">Login</button>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-section">
+        <h1>Give the <span>Best Start</span> to Your Career</h1>
+        <p>Learn, practice, and get hired!</p>
+
+        <div class="cards">
+            <!-- Certification Course Card -->
+            <div class="card">
+                <div>
+                <h3>Certification courses</h3>
+                <span class="duration">4-8 weeks</span>
+                <p>Learn in-demand skills and get certified</p>
+                <a href="#">Explore now ➔</a>
+                </div>
+                <div>
+                    <img src="./mission.png" alt="Certification Course Image">
+                </div>
+                
+            </div>
+
+            <!-- Placement Guarantee Course Card -->
+            <div class="card">
+                <div>
+                    <h3>Placement Guarantee Courses</h3>
+                    <span class="duration">6 months</span>
+                    <p>Get job ready with placement assistance</p>
+                    <a href="#">Explore now ➔</a>
+                </div>
+                <div>
+                    <img src="./vision.png" alt="Placement Guarantee Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="top">Top companies hiring from us!!</h3>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="./logo/microsoft.webp" alt="Image 1">
+            <img src="./logo/ibm.webp" alt="Image 2">
+            <img src="./logo/paytm.jpg" alt="Image 3">
+            <img src="./logo/swiggy.jpg" alt="Image 4">
+            <img src="./logo/zomato.webp" alt="Image 5">
+            <img src="./logo/facebook.webp" alt="Image 5">
+            <img src="./logo/youtube.jpg" alt="Image 6">
+            <img src="./logo/pvr.jpg" alt="Image 7">
+            <img src="./logo/netflix.webp" alt="Image 8">
+            <img src="./logo/meta.jpg" alt="Image 9">
+            <img src="./logo/amazon.webp" alt="Image 10">
+        </div>
+    </div>
+
+    <!-- Certification Section -->
+    <div class="cert-section">
+        <h2>Our Unique Offering</h2>
+        <div class="subheading">Certification Courses</div>
+        <div class="features">
+            <span>📚 Great content</span>
+            <span>💼 Practical exposure</span>
+            <span>🔑 Job Assistance</span>
+        </div>
+        <!-- Selection card -->
+        <div class="container">
+            <div class="sidebar">
+                <ul>
+                    <li class="active" onclick="changeContent('popular')">Most Popular</li>
+                    <li onclick="changeContent('programming')">Programming</li>
+                    <li onclick="changeContent('business')">Business & Management</li>
+                    <li onclick="changeContent('engineering')">Core Engineering</li>
+                    <li onclick="changeContent('data-science')">Data Science</li>
+                    <li onclick="changeContent('design')">Design</li>
+                    <li onclick="changeContent('ai')">Artificial Intelligence</li>
+                    <li onclick="changeContent('arts')">Creative Arts</li>
+                    <li onclick="changeContent('language')">Language</li>
+                </ul>
+            </div>
+    
+            <div class="content">
+                <div id="newcard-container">
+                    <!-- newcards will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="special-offer">
+            <h3>Special Offer!</h3>
+            <p>Get 50% off on your first course</p>
+            <img src="./logo/microsoft.webp" alt="Special Offer">
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-section">
+        <h2>Why Choose Us</h2>
+        <p>Over 2 million students have trusted us with their careers</p>
+        <div class="stats-container">
+            <div class="stat-box">
+                <h3>2M+</h3>
+                <p>Students trained</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-box">
+                <h3>100K+</h3>
+                <p>Certified Professionals</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-box">
+                <h3>85%</h3>
+                <p>Placement Success Rate</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="testimonial-section">
+        <h2>Our students, making us proud everyday!</h2>
+        <p>Let our success stories do the talking</p>
+
+        <div class="testimonial-card">
+            <img src="./shubham.jpg" alt="Student Image">
+            <div class="testimonial-content">
+                <span class="quote">“</span>
+                <p>I developed an interest in HR Management and came across Internshala Trainings, the courses were
+                    affordable with great content. The best part was that they provided me with a lot of practical
+                    projects to work on, which landed me my first internship! I'll be forever grateful to Internshala!
+                </p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <h4>Shubham Mishra</h4>
+                <p>ITS Engineering College</p>
+            </div>
+        </div>
+    </div>
+    
+    <section class="educators-section">
+        <h2>Meet your super-skilled educators</h2>
+        <p>Our top-notch instructors have years of experience from companies such as Google, IBM, and McKinsey, and more.</p>
+
+        <div class="educators-container">
+            <div class="educator-card">
+                <img src="./shubham.jpg" alt="Anuj Kalbalia">
+                <span class="experience-badge">12 YEARS</span>
+                <h4>Shubham Mishra (Ex-IBM)</h4>
+                <p>Educator, Web Development</p>
+                <p>• Ex-CodeChef, Internshala<br>• NIT Durgapur alumnus</p>
+            </div>
+
+            <div class="educator-card">
+                <img src="./raj.jpg" alt="Tripta Singh">
+                <span class="experience-badge">11 YEARS</span>
+                <h4>Raj Rajput (Ex-McKinsey)</h4>
+                <p>Educator, Advanced Excel</p>
+                <p>• Ex-Director of Content Development, Knowledge Platform<br>• LSE Alumna</p>
+            </div>
+
+            <div class="educator-card">
+                <img src="./saksham.jpg" alt="Kunal Jain">
+                <span class="experience-badge">15 YEARS</span>
+                <h4>Saksham Vasistha (Ex-Capital One)</h4>
+                <p>Educator, Data Science</p>
+                <p>• Ex-Aviva, IIT Bombay alumnus<br>• Founder of Analytics Vidhya</p>
+            </div>
+
+            <div class="educator-card">
+                <img src="./sweta.jpg" alt="Geetika Singh">
+                <span class="experience-badge">12 YEARS</span>
+                <h4>Sweta Mishra (Ex-HSBC)</h4>
+                <p>Educator, Human Resource Management</p>
+                <p>• Ex-Accenture, Google, Uber, & Hero MotoCorp<br>• University of Essex alumna</p>
+            </div>
+        </div>
+    </section>
+    <script src="internsala.js"></script>
+</body>
+
+</html>
